@@ -23,6 +23,11 @@ class getCode(Resource):
         abort(401, message="Username or Password is not valid...")
     return {"data": ""}, 201
 
+class HelloWorld(Resource):
+  def get(self):
+    return {"data": "Hello World!"}
+
 api.add_resource(getCode,"/getcode")
+api.add_resource(HelloWorld, "/helloworld")
 if __name__ == "__main__":
   app.run(debug=True)
