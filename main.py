@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_restful import Api, Resource, abort, request
+from flask_restful import Api, Resource, request
 from ring_doorbell import Ring, Auth
 from oauthlib.oauth2 import MissingTokenError
 from flask_cors import CORS
